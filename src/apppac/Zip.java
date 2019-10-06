@@ -33,7 +33,7 @@ public class Zip {
         } else {
             String Name =path+"\\"+ s.substring(6, s.lastIndexOf(" "));
            name=path+"\\"+ s.substring(6, s.lastIndexOf("."));
-
+            System.out.println("Calling unzip function from rm class");
                 rm.unzip(Name, name);
             
 
@@ -144,6 +144,7 @@ public class Zip {
         if (!srcFolder.exists()) {
 
             JOptionPane.showMessageDialog(null, "Directory does not exist.");
+            System.out.println("inside cpdir function");
             //just exit
 
         } else {

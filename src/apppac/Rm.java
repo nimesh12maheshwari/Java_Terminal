@@ -11,9 +11,7 @@ import java.util.zip.ZipInputStream;
 import javax.swing.JOptionPane;
 
 public class Rm extends Commands {
-
     Search search = new Search();
-
     void rm(String Path, String name) //name is full command begin with rm
     {
         if ("rm ".compareTo(name.substring(0, 3)) == 0) {

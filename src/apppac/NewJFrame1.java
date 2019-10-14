@@ -129,7 +129,7 @@ public class NewJFrame1 extends javax.swing.JFrame {
 
             nme = jTextField1.getText();
             reg = Integer.parseInt(jTextField3.getText());
-            pass = jPasswordField1.getText();
+            pass = new String(jPasswordField1.getPassword()); //  Chamge 1
             usname = jTextField2.getText();
             tm = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
 

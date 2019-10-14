@@ -91,7 +91,6 @@ public class TerminalGUI extends javax.swing.JFrame {
                 FileInputStream inputStream = new FileInputStream("PathFile.txt");                    //reading path from textfile
                 try (InputStreamReader reader = new InputStreamReader(inputStream, "UTF-8")) {
                     int character;
-
                     while ((character = reader.read()) != -1) {
                         path += (char) character;
                     }
@@ -334,7 +333,14 @@ public class TerminalGUI extends javax.swing.JFrame {
                         TerminalScreen.setText("");  //setText to pointer to next line seteditable( don't know but we can use use it in code)
                        TerminalScreen.append(commands.readPathFile());
                         break;
-
+                        
+                    case "echo":
+                        //TerminalScreen.setText("");  //setText to pointer to next line seteditable( don't know but we can use use it in code)
+                        TerminalScreen.append(s);
+                        TerminalScreen.append(commands.readPathFile());
+                        break;
+                        
+                        
                     case "pwd":
                         TerminalScreen.append("\n" + path);
                         TerminalScreen.append(commands.ReadPathFile());

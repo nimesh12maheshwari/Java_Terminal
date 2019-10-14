@@ -166,9 +166,6 @@ public class Commands {
         }
     }
 
-    
-
-
     String ls(String path) throws IOException {
         String s, str;
 
@@ -200,9 +197,7 @@ public class Commands {
             str = s.substring(s.lastIndexOf("\\") + 1);
             ans += str;
             ans += "_|_";
-
         }
-
         return ans;
     }
 }

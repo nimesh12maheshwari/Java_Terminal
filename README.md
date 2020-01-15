@@ -16,3 +16,6 @@ Implemented few linux commands without using system calls.
 - Implemented functionality to zip/unzip the files.  We haven't used the ‘system()’ function call to execute commands.
 
 ![Image](https://github.com/nimesh12maheshwari/Java_Terminal/blob/master/img1.png)
+
+## Instructions to use
+First of all insert default path for terminal in PathFile.txt and also put same path class TerminalGUI in which "switch-case : exit". Implement commands that are present in description and you can get full description of command that can run in terminal by "help" command.

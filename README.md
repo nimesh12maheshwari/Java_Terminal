@@ -14,3 +14,5 @@ Implemented few linux commands without using system calls.
 - Implemented hardware information. 
 - Maintained information about the various groups that a user is involved with. 
 - Implemented functionality to zip/unzip the files.  We haven't used the ‘system()’ function call to execute commands.
+
+![Image](https://github.com/nimesh12maheshwari/Java_Terminal/blob/master/img1.png)
